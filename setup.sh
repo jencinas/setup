@@ -14,6 +14,7 @@ nvm use v0.10.12
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
+npm install
 npm install -g jshint
 
 # Install rlwrap to provide libreadline features with node
@@ -38,7 +39,7 @@ fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
-git clone https://github.co/jencinas/dotfiles.git
+git clone https://github.com/jencinas/dotfiles.git
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
